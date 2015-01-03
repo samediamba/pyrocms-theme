@@ -1,4 +1,4 @@
-streams-theme
+pyrocms-theme
 =============
 
-Streams Platform admin theme.
+PyroCMS admin theme.
