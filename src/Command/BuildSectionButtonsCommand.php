@@ -1,4 +1,4 @@
-<?php namespace Anomaly\StreamsTheme\Command;
+<?php namespace Anomaly\PyrocmsTheme\Command;
 
 /**
  * Class BuildSectionButtonsCommand
@@ -6,7 +6,7 @@
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Command
+ * @package       Anomaly\PyrocmsTheme\Command
  */
 class BuildSectionButtonsCommand
 {

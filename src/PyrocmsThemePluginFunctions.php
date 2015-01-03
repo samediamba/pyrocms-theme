@@ -1,16 +1,16 @@
-<?php namespace Anomaly\StreamsTheme;
+<?php namespace Anomaly\PyrocmsTheme;
 
 use Laracasts\Commander\CommanderTrait;
 
 /**
- * Class StreamsThemePluginFunctions
+ * Class PyrocmsThemePluginFunctions
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme
+ * @package       Anomaly\PyrocmsTheme
  */
-class StreamsThemePluginFunctions
+class PyrocmsThemePluginFunctions
 {
 
     use CommanderTrait;
@@ -18,16 +18,16 @@ class StreamsThemePluginFunctions
     /**
      * The theme object.
      *
-     * @var StreamsTheme
+     * @var PyrocmsTheme
      */
     protected $theme;
 
     /**
-     * Create a new StreamsThemePluginFunctions instance.
+     * Create a new PyrocmsThemePluginFunctions instance.
      *
-     * @param StreamsTheme $theme
+     * @param PyrocmsTheme $theme
      */
-    public function __construct(StreamsTheme $theme)
+    public function __construct(PyrocmsTheme $theme)
     {
         $this->theme = $theme;
     }
@@ -39,7 +39,7 @@ class StreamsThemePluginFunctions
      */
     public function nav()
     {
-        return $this->execute('Anomaly\StreamsTheme\Command\BuildThemeNavigationCommand');
+        return $this->execute('Anomaly\PyrocmsTheme\Command\BuildThemeNavigationCommand');
     }
 
     /**
@@ -49,7 +49,7 @@ class StreamsThemePluginFunctions
      */
     public function sections()
     {
-        return $this->execute('Anomaly\StreamsTheme\Command\BuildModuleSectionsCommand');
+        return $this->execute('Anomaly\PyrocmsTheme\Command\BuildModuleSectionsCommand');
     }
 
     /**
@@ -62,7 +62,7 @@ class StreamsThemePluginFunctions
         $section = $this->getActiveSection();
 
         return $this->execute(
-            'Anomaly\StreamsTheme\Command\BuildSectionButtonsCommand',
+            'Anomaly\PyrocmsTheme\Command\BuildSectionButtonsCommand',
             compact('section')
         );
     }

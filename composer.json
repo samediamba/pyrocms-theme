@@ -1,5 +1,5 @@
 {
-    "name": "anomaly/streams-theme",
+    "name": "anomaly/pyrocms-theme",
     "type": "streams-addon",
     "description": "Streams theme.",
     "authors": [
@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Anomaly\\StreamsTheme\\": "src/"
+            "Anomaly\\PyrocmsTheme\\": "src/"
         }
     },
     "extra": {

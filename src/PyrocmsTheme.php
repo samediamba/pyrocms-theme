@@ -1,8 +1,8 @@
-<?php namespace Anomaly\StreamsTheme;
+<?php namespace Anomaly\PyrocmsTheme;
 
 use Anomaly\Streams\Platform\Addon\Theme\Theme;
 
-class StreamsTheme extends Theme
+class PyrocmsTheme extends Theme
 {
 
     protected $slug = 'streams';
@@ -19,5 +19,5 @@ class StreamsTheme extends Theme
      *
      * @var string
      */
-    protected $tag = 'Anomaly\StreamsTheme\StreamsThemeTag';
+    protected $tag = 'Anomaly\PyrocmsTheme\PyrocmsThemeTag';
 }

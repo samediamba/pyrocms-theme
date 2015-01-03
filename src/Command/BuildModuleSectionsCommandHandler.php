@@ -1,4 +1,4 @@
-<?php namespace Anomaly\StreamsTheme\Command;
+<?php namespace Anomaly\PyrocmsTheme\Command;
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
@@ -9,7 +9,7 @@ use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Command
+ * @package       Anomaly\PyrocmsTheme\Command
  */
 class BuildModuleSectionsCommandHandler
 {
