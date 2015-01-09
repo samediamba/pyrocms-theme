@@ -1,6 +1,9 @@
 <?php namespace Anomaly\PyrocmsTheme;
 
-use Laracasts\Commander\CommanderTrait;
+use Anomaly\PyrocmsTheme\Command\BuildModuleSectionsCommand;
+use Anomaly\PyrocmsTheme\Command\BuildSectionButtonsCommand;
+use Anomaly\PyrocmsTheme\Command\BuildThemeNavigationCommand;
+use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
  * Class PyrocmsThemePluginFunctions
@@ -13,7 +16,7 @@ use Laracasts\Commander\CommanderTrait;
 class PyrocmsThemePluginFunctions
 {
 
-    use CommanderTrait;
+    use DispatchesCommands;
 
     /**
      * The theme object.
@@ -39,7 +42,7 @@ class PyrocmsThemePluginFunctions
      */
     public function nav()
     {
-        return $this->execute('Anomaly\PyrocmsTheme\Command\BuildThemeNavigationCommand');
+        return $this->dispatch(new BuildThemeNavigationCommand());
     }
 
     /**
@@ -49,7 +52,7 @@ class PyrocmsThemePluginFunctions
      */
     public function sections()
     {
-        return $this->execute('Anomaly\PyrocmsTheme\Command\BuildModuleSectionsCommand');
+        return $this->dispatch(new BuildModuleSectionsCommand());
     }
 
     /**
@@ -61,10 +64,7 @@ class PyrocmsThemePluginFunctions
     {
         $section = $this->getActiveSection();
 
-        return $this->execute(
-            'Anomaly\PyrocmsTheme\Command\BuildSectionButtonsCommand',
-            compact('section')
-        );
+        return $this->dispatch(new BuildSectionButtonsCommand($section));
     }
 
     /**

@@ -1,7 +1,6 @@
 <?php namespace Anomaly\PyrocmsTheme;
 
 use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
-use Laracasts\Commander\CommanderTrait;
 
 /**
  * Class PyrocmsThemePlugin
