@@ -1,7 +1,8 @@
-<?php namespace Anomaly\PyrocmsTheme\Command;
+<?php namespace Anomaly\PyrocmsTheme\Command\Handler;
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
+use Anomaly\StreamsTheme\Command\BuildSectionButtonsCommand;
 
 /**
  * Class BuildSectionButtonsCommandHandler
@@ -9,7 +10,7 @@ use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\PyrocmsTheme\Command
+ * @package       Anomaly\StreamsTheme\Command
  */
 class BuildSectionButtonsCommandHandler
 {
