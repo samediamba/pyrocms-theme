@@ -1,8 +1,8 @@
 <?php namespace Anomaly\PyrocmsTheme;
 
-use Anomaly\PyrocmsTheme\Command\BuildModuleSectionsCommand;
-use Anomaly\PyrocmsTheme\Command\BuildSectionButtonsCommand;
-use Anomaly\PyrocmsTheme\Command\BuildThemeNavigationCommand;
+use Anomaly\PyrocmsTheme\Command\BuildModuleSections;
+use Anomaly\PyrocmsTheme\Command\BuildSectionButtons;
+use Anomaly\PyrocmsTheme\Command\BuildThemeNavigation;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
@@ -42,7 +42,7 @@ class PyrocmsThemePluginFunctions
      */
     public function nav()
     {
-        return $this->dispatch(new BuildThemeNavigationCommand());
+        return $this->dispatch(new BuildThemeNavigation());
     }
 
     /**
@@ -52,7 +52,7 @@ class PyrocmsThemePluginFunctions
      */
     public function sections()
     {
-        return $this->dispatch(new BuildModuleSectionsCommand());
+        return $this->dispatch(new BuildModuleSections());
     }
 
     /**
@@ -64,7 +64,7 @@ class PyrocmsThemePluginFunctions
     {
         $section = $this->getActiveSection();
 
-        return $this->dispatch(new BuildSectionButtonsCommand($section));
+        return $this->dispatch(new BuildSectionButtons($section));
     }
 
     /**
