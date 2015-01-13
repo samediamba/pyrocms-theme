@@ -11,4 +11,5 @@ class PyrocmsTheme extends Theme
      * @var bool
      */
     protected $admin = true;
+
 }
