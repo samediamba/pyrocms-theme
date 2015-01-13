@@ -2,7 +2,7 @@
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
-use Anomaly\StreamsTheme\Command\BuildModuleSections;
+use Anomaly\PyrocmsTheme\Command\BuildModuleSections;
 
 /**
  * Class BuildModuleSectionsHandler
@@ -10,7 +10,7 @@ use Anomaly\StreamsTheme\Command\BuildModuleSections;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Command
+ * @package       Anomaly\PyrocmsTheme\Command
  */
 class BuildModuleSectionsHandler
 {

@@ -2,7 +2,7 @@
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
-use Anomaly\StreamsTheme\Command\BuildThemeNavigation;
+use Anomaly\PyrocmsTheme\Command\BuildThemeNavigation;
 
 /**
  * Class BuildThemeNavigationHandler
@@ -10,7 +10,7 @@ use Anomaly\StreamsTheme\Command\BuildThemeNavigation;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Command
+ * @package       Anomaly\PyrocmsTheme\Command
  */
 class BuildThemeNavigationHandler
 {
