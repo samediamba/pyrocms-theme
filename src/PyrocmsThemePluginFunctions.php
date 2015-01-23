@@ -3,17 +3,18 @@
 use Anomaly\PyrocmsTheme\Command\BuildModuleSections;
 use Anomaly\PyrocmsTheme\Command\BuildSectionButtons;
 use Anomaly\PyrocmsTheme\Command\BuildThemeNavigation;
+use Anomaly\PyrocmsTheme\Command\RenderToolbar;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
- * Class PyrocmsThemePluginFunctions
+ * Class StreamsThemePluginFunctions
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\PyrocmsTheme
  */
-class PyrocmsThemePluginFunctions
+class StreamsThemePluginFunctions
 {
 
     use DispatchesCommands;
@@ -26,13 +27,23 @@ class PyrocmsThemePluginFunctions
     protected $theme;
 
     /**
-     * Create a new PyrocmsThemePluginFunctions instance.
+     * Create a new StreamsThemePluginFunctions instance.
      *
      * @param PyrocmsTheme $theme
      */
     public function __construct(PyrocmsTheme $theme)
     {
         $this->theme = $theme;
+    }
+
+    /**
+     * Render the toolbar partial.
+     *
+     * @return \Illuminate\Http\Response|\Illuminate\View\View
+     */
+    public function toolbar()
+    {
+        return $this->dispatch(new RenderToolbar());
     }
 
     /**
