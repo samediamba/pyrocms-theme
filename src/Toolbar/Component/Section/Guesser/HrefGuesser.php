@@ -1,4 +1,4 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section\Guesser;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section\Guesser;
 
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
 use Illuminate\Routing\UrlGenerator;
@@ -9,7 +9,7 @@ use Illuminate\Routing\UrlGenerator;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section\Guesser
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section\Guesser
  */
 class HrefGuesser
 {

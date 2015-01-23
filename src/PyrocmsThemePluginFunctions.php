@@ -7,14 +7,14 @@ use Anomaly\PyrocmsTheme\Command\RenderToolbar;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
- * Class StreamsThemePluginFunctions
+ * Class PyrocmsThemePluginFunctions
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
  * @package       Anomaly\PyrocmsTheme
  */
-class StreamsThemePluginFunctions
+class PyrocmsThemePluginFunctions
 {
 
     use DispatchesCommands;
@@ -27,7 +27,7 @@ class StreamsThemePluginFunctions
     protected $theme;
 
     /**
-     * Create a new StreamsThemePluginFunctions instance.
+     * Create a new PyrocmsThemePluginFunctions instance.
      *
      * @param PyrocmsTheme $theme
      */

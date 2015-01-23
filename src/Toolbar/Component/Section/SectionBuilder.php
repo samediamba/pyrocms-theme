@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section;
 
-use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
+use Anomaly\PyrocmsTheme\Toolbar\ToolbarBuilder;
 
 /**
  * Class SectionBuilder
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section
  */
 class SectionBuilder
 {

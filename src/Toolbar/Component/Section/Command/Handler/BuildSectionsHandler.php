@@ -1,7 +1,7 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command\Handler;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Command\BuildSections;
-use Anomaly\StreamsTheme\Toolbar\Component\Section\SectionBuilder;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command\BuildSections;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\SectionBuilder;
 
 /**
  * Class BuildSectionsHandler
@@ -9,7 +9,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Section\SectionBuilder;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section\Command\Handler
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command\Handler
  */
 class BuildSectionsHandler
 {

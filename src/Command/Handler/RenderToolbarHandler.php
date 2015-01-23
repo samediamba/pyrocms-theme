@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Command\Handler;
 
-use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
+use Anomaly\PyrocmsTheme\Toolbar\ToolbarBuilder;
 
 /**
  * Class MakeToolbarHandler
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Command\Handler
+ * @package       Anomaly\PyrocmsTheme\Command\Handler
  */
 class RenderToolbarHandler
 {

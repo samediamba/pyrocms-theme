@@ -1,7 +1,7 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Guesser\HrefGuesser;
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Guesser\TextGuesser;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Guesser\HrefGuesser;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Guesser\TextGuesser;
 
 /**
  * Class SectionGuesser
@@ -9,7 +9,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Section\Guesser\TextGuesser;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section
  */
 class SectionGuesser
 {

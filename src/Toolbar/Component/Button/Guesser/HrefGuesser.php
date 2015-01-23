@@ -1,4 +1,4 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Button\Guesser;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Button\Guesser;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\UrlGenerator;
@@ -9,7 +9,7 @@ use Illuminate\Routing\UrlGenerator;
  * @link          http://anomaly.is/streams-Platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Button\Guesser
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Button\Guesser
  */
 class HrefGuesser
 {

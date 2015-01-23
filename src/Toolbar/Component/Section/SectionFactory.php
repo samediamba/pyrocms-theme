@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Contract\SectionInterface;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Contract\SectionInterface;
 
 /**
  * Class SectionFactory
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Section\Contract\SectionInterface;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section
  */
 class SectionFactory
 {
@@ -18,7 +18,7 @@ class SectionFactory
      *
      * @var string
      */
-    protected $section = 'Anomaly\StreamsTheme\Toolbar\Component\Section\Section';
+    protected $section = 'Anomaly\PyrocmsTheme\Toolbar\Component\Section\Section';
 
     /**
      * Make the section from it's parameters.

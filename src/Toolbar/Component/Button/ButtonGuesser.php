@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Button;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Button;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Button\Guesser\HrefGuesser;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Button\Guesser\HrefGuesser;
 
 /**
  * Class ButtonGuesser
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Button\Guesser\HrefGuesser;
  * @link          http://anomaly.is/streams-Platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Button
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Button
  */
 class ButtonGuesser
 {

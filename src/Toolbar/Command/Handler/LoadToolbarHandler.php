@@ -1,8 +1,8 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Command\Handler;
 
-use Anomaly\StreamsTheme\Toolbar\Command\LoadToolbar;
-use Anomaly\StreamsTheme\Toolbar\Component\Button\Command\LoadButtons;
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Command\LoadSections;
+use Anomaly\PyrocmsTheme\Toolbar\Command\LoadToolbar;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\LoadButtons;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command\LoadSections;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
@@ -11,7 +11,7 @@ use Illuminate\Foundation\Bus\DispatchesCommands;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Command\Handler
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Command\Handler
  */
 class LoadToolbarHandler
 {

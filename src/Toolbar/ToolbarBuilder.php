@@ -1,7 +1,7 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar;
 
-use Anomaly\StreamsTheme\Toolbar\Command\BuildToolbar;
-use Anomaly\StreamsTheme\Toolbar\Command\LoadToolbar;
+use Anomaly\PyrocmsTheme\Toolbar\Command\BuildToolbar;
+use Anomaly\PyrocmsTheme\Toolbar\Command\LoadToolbar;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
@@ -12,7 +12,7 @@ use Illuminate\View\View;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar
+ * @package       Anomaly\PyrocmsTheme\Toolbar
  */
 class ToolbarBuilder
 {

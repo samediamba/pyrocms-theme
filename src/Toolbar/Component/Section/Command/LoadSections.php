@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section\Command;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command;
 
-use Anomaly\StreamsTheme\Toolbar\Toolbar;
+use Anomaly\PyrocmsTheme\Toolbar\Toolbar;
 
 /**
  * Class LoadSections
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\Toolbar;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section\Command
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command
  */
 class LoadSections
 {

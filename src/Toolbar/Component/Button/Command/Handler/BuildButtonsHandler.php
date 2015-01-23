@@ -1,7 +1,7 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Button\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\Handler;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Button\ButtonBuilder;
-use Anomaly\StreamsTheme\Toolbar\Component\Button\Command\BuildButtons;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Button\ButtonBuilder;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\BuildButtons;
 
 /**
  * Class BuildButtonsHandler
@@ -9,7 +9,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Button\Command\BuildButtons;
  * @link          http://anomaly.is/streams-Platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Button\Listener\Command
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Button\Listener\Command
  */
 class BuildButtonsHandler
 {
@@ -17,7 +17,7 @@ class BuildButtonsHandler
     /**
      * The button builder.
      *
-     * @var \Anomaly\StreamsTheme\Toolbar\Component\Button\ButtonBuilder
+     * @var \Anomaly\PyrocmsTheme\Toolbar\Component\Button\ButtonBuilder
      */
     protected $builder;
 

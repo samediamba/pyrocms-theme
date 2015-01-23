@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Section;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Section;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Contract\SectionInterface;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Contract\SectionInterface;
 
 /**
  * Class Section
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Section\Contract\SectionInterface;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Section
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Section
  */
 class Section implements SectionInterface
 {

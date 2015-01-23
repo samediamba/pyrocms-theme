@@ -1,9 +1,9 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Command\Handler;
 
-use Anomaly\StreamsTheme\Toolbar\Command\BuildToolbar;
-use Anomaly\StreamsTheme\Toolbar\Component\Button\Command\BuildButtons;
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Command\BuildSections;
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Command\SetActiveSection;
+use Anomaly\PyrocmsTheme\Toolbar\Command\BuildToolbar;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\BuildButtons;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command\BuildSections;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Command\SetActiveSection;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
@@ -12,7 +12,7 @@ use Illuminate\Foundation\Bus\DispatchesCommands;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Command\Handler
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Command\Handler
  */
 class BuildToolbarHandler
 {

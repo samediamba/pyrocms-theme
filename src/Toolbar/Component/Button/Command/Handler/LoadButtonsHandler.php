@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Button\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\Handler;
 
-use Anomaly\StreamsTheme\Toolbar\Component\Button\Command\LoadButtons;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\LoadButtons;
 
 /**
  * Class LoadButtonsHandler
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\Component\Button\Command\LoadButtons;
  * @link          http://anomaly.is/streams-Platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Button\Command\Handler
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Button\Command\Handler
  */
 class LoadButtonsHandler
 {

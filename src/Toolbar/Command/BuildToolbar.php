@@ -1,6 +1,6 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Command;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Command;
 
-use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
+use Anomaly\PyrocmsTheme\Toolbar\ToolbarBuilder;
 
 /**
  * Class BuildToolbar
@@ -8,7 +8,7 @@ use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Command
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Command
  */
 class BuildToolbar
 {
