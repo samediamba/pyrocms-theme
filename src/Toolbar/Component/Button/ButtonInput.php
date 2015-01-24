@@ -1,8 +1,9 @@
-<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Button;
+<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Button;
 
 use Anomaly\Streams\Platform\Support\Resolver;
 use Anomaly\Streams\Platform\Ui\Button\ButtonNormalizer;
-use Anomaly\PyrocmsTheme\Toolbar\ToolbarBuilder;
+use Anomaly\StreamsTheme\Toolbar\Component\Section\Contract\SectionInterface;
+use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
 use Illuminate\Support\Collection;
 
 /**
@@ -11,7 +12,7 @@ use Illuminate\Support\Collection;
  * @link          http://anomaly.is/streams-Platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Button
+ * @package       Anomaly\StreamsTheme\Toolbar\Component\Button
  */
 class ButtonInput
 {
@@ -72,11 +73,17 @@ class ButtonInput
      */
     protected function setInput(ToolbarBuilder $builder)
     {
+        $buttons = [];
+
         $toolbar  = $builder->getToolbar();
         $sections = $toolbar->getSections();
         $section  = $sections->active();
 
-        $builder->setButtons($section->getButtons());
+        if ($section instanceof SectionInterface) {
+            $buttons = $section->getButtons();
+        }
+
+        $builder->setButtons($buttons);
     }
 
     /**
