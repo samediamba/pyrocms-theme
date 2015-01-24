@@ -1,9 +1,9 @@
-<?php namespace Anomaly\StreamsTheme\Toolbar\Component\Button;
+<?php namespace Anomaly\PyrocmsTheme\Toolbar\Component\Button;
 
 use Anomaly\Streams\Platform\Support\Resolver;
 use Anomaly\Streams\Platform\Ui\Button\ButtonNormalizer;
-use Anomaly\StreamsTheme\Toolbar\Component\Section\Contract\SectionInterface;
-use Anomaly\StreamsTheme\Toolbar\ToolbarBuilder;
+use Anomaly\PyrocmsTheme\Toolbar\Component\Section\Contract\SectionInterface;
+use Anomaly\PyrocmsTheme\Toolbar\ToolbarBuilder;
 use Illuminate\Support\Collection;
 
 /**
@@ -12,7 +12,7 @@ use Illuminate\Support\Collection;
  * @link          http://anomaly.is/streams-Platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme\Toolbar\Component\Button
+ * @package       Anomaly\PyrocmsTheme\Toolbar\Component\Button
  */
 class ButtonInput
 {
