@@ -1,20 +1,17 @@
-<?php namespace Anomaly\PyrocmsTheme;
+<?php namespace Anomaly\StreamsTheme;
 
-use Anomaly\PyrocmsTheme\Command\BuildModuleSections;
-use Anomaly\PyrocmsTheme\Command\BuildSectionButtons;
 use Anomaly\PyrocmsTheme\Command\BuildThemeNavigation;
-use Anomaly\PyrocmsTheme\Command\RenderToolbar;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
- * Class PyrocmsThemePluginFunctions
+ * Class StreamsThemePluginFunctions
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\PyrocmsTheme
+ * @package       Anomaly\StreamsTheme
  */
-class PyrocmsThemePluginFunctions
+class StreamsThemePluginFunctions
 {
 
     use DispatchesCommands;
@@ -22,28 +19,18 @@ class PyrocmsThemePluginFunctions
     /**
      * The theme object.
      *
-     * @var PyrocmsTheme
+     * @var StreamsTheme
      */
     protected $theme;
 
     /**
-     * Create a new PyrocmsThemePluginFunctions instance.
+     * Create a new StreamsThemePluginFunctions instance.
      *
-     * @param PyrocmsTheme $theme
+     * @param StreamsTheme $theme
      */
-    public function __construct(PyrocmsTheme $theme)
+    public function __construct(StreamsTheme $theme)
     {
         $this->theme = $theme;
-    }
-
-    /**
-     * Render the toolbar partial.
-     *
-     * @return \Illuminate\Http\Response|\Illuminate\View\View
-     */
-    public function toolbar()
-    {
-        return $this->dispatch(new RenderToolbar());
     }
 
     /**
@@ -54,28 +41,6 @@ class PyrocmsThemePluginFunctions
     public function nav()
     {
         return $this->dispatch(new BuildThemeNavigation());
-    }
-
-    /**
-     * Return sections for the theme.
-     *
-     * @return mixed
-     */
-    public function sections()
-    {
-        return $this->dispatch(new BuildModuleSections());
-    }
-
-    /**
-     * Return the actions for the active section.
-     *
-     * @return null
-     */
-    public function actions()
-    {
-        $section = $this->getActiveSection();
-
-        return $this->dispatch(new BuildSectionButtons($section));
     }
 
     /**
