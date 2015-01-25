@@ -1,17 +1,17 @@
-<?php namespace Anomaly\StreamsTheme;
+<?php namespace Anomaly\PyrocmsTheme;
 
 use Anomaly\PyrocmsTheme\Command\BuildThemeNavigation;
 use Illuminate\Foundation\Bus\DispatchesCommands;
 
 /**
- * Class StreamsThemePluginFunctions
+ * Class PyrocmsThemePluginFunctions
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme
+ * @package       Anomaly\PyrocmsTheme
  */
-class StreamsThemePluginFunctions
+class PyrocmsThemePluginFunctions
 {
 
     use DispatchesCommands;
@@ -19,16 +19,16 @@ class StreamsThemePluginFunctions
     /**
      * The theme object.
      *
-     * @var StreamsTheme
+     * @var PyrocmsTheme
      */
     protected $theme;
 
     /**
-     * Create a new StreamsThemePluginFunctions instance.
+     * Create a new PyrocmsThemePluginFunctions instance.
      *
-     * @param StreamsTheme $theme
+     * @param PyrocmsTheme $theme
      */
-    public function __construct(StreamsTheme $theme)
+    public function __construct(PyrocmsTheme $theme)
     {
         $this->theme = $theme;
     }
