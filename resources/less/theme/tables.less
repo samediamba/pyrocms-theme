@@ -1,18 +1,16 @@
-.table {
-    margin-bottom: 0;
+.segment.table {
+    margin-top: 0;
+    padding-top: 0;
+}
 
-    td:not(:last-child),
-    th:not(:last-child) {
-        width: 1px;
-        white-space: nowrap;
-    }
+@media (max-width: 768px) {
+    .ui.table .button {
+        width: 100%;
+        display: block;
+        margin: 0 0 .5em 0;
 
-    > thead > tr > th {
-        border-bottom: none;
-
-        a {
-            color: @text-color;
-            text-decoration: none;
+        &:last-child {
+            margin-bottom: 0 !important;
         }
     }
 }

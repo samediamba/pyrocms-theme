@@ -1,125 +1,45 @@
-#header {
-    background-color: lighten(@gray-darker, 20%);
+.ui.segment.header {
+    margin-bottom: 0;
 
-    .navbar {
-        margin: 0;
-        border: none;
-        background: none;
+    .buttons {
+        margin-bottom: 2rem;
+    }
 
-        #logo {
-            float: left;
-            width: 80px;
-            height: 50px;
-            display: inline-block;
-            background-repeat: no-repeat;
-            background-size: 100% !important;
-            background-position: center center !important;
-            background: url('../../../{{ image_path("theme::img/logo.png") }}');
+    .menu.vertical {
+        display: none;
+
+        .item:first-child {
+            margin-left: 0;
         }
+    }
 
-        .navbar-brand {
-            color: #ffffff;
-            font-weight: bold;
-            font-family: @headings-font-family;
-        }
+    .menu.primary {
+        display: block;
+    }
+}
 
-        .navbar-toggle {
-            border: none;
-            background: none;
-
-            .icon-bar {
-                background-color: #ffffff !important;
+@media (max-width: 769px) {
+    .ui.segment.header {
+        .ui.header {
+            span {
+                display: block;
             }
         }
 
-        .nav {
-            > li {
-                position: relative;
-
-                &:last-child {
-                    margin-right: -@grid-gutter-width / 2 !important;
-                }
-
-                &.open {
-                    > a {
-                        color: lighten(@gray, 20%) !important;
-                    }
-                }
-
-                &.has-dropdown {
-                    > a {
-                        background: none;
-                        padding-right: 20px;
-
-                        &:after {
-                            z-index: 0;
-                            right: 6px;
-                            content: "\f0d7";
-                            position: absolute;
-                            font-family: "FontAwesome";
-                        }
-                    }
-
-                    &:hover {
-                        > a {
-                            color: lighten(@gray, 20%);
-                        }
-                    }
-                }
-
-                > a {
-                    color: lighten(@gray-dark, 20%);
-
-                    .flag-icon {
-                        width: 34px;
-                        height: 25px;
-                        display: block;
-                        margin-top: -2px;
-                        margin-bottom: -5px;
-                        border-radius: @border-radius-base;
-                    }
-
-                    &:hover {
-                        color: lighten(@gray, 20%);
-                    }
-                }
-
-                &.active {
-                    > a {
-                        color: #ffffff;
-                        background: none;
-                        font-weight: bold;
-                    }
-
-                    &:hover {
-                        > a {
-                            color: #ffffff;
-                        }
-                    }
-                }
-
-                ul.dropdown-menu {
-                    margin-top: -5px;
-
-                    li {
-                        a {
-                            color: @gray-darker;
-                        }
-
-                        &.active {
-                            a {
-                                background: none;
-                                font-weight: bold;
-                                color: @gray-darker;
-                            }
-                        }
-                    }
-                }
-            }
+        .menu.vertical {
+            display: block;
         }
 
-        .navbar-collapse {
-            border-top: none;
+        .menu.primary {
+            display: none;
+        }
+
+        .buttons {
+            .button {
+                width: 100%;
+                display: block;
+                margin: 0 0 .5em 0;
+            }
         }
     }
 }

@@ -1,30 +1,32 @@
 $(function () {
 
-    // Select 2
-    $('select.select2').select2();
+    // Initialize popups.
+    $('.popup').popup();
 
-    // Confirm
-    $('[data-confirm]').click(function () {
-        if (!confirm($(this).data('confirm'))) {
-            return false;
-        }
+    // Initialize dropdown.
+    $('.dropdown').dropdown({
+        transition: 'drop'
     });
 
-    // Prompt
-    $('[data-prompt]').click(function () {
+    // Initialize checkboxes.
+    $('.checkbox').checkbox();
 
-        var input = prompt($(this).data('prompt'));
+    // Initialize tabs.
+    $('.ui.attached.tabular.menu .item').tab();
 
-        if ($(this).data('match').toLowerCase() != input.toLowerCase()) {
+    // Clear loading.
+    $('.ui.active.dimmer').removeClass('active');
 
-            alert('Validation failed!');
+    // Toggle navigation.
+    $('a.launch').click(function (e) {
 
-            return false;
-        }
+        e.preventDefault();
+
+        $('.sidebar.navigation').sidebar('toggle');
     });
 
-    // When hiding modals destroy them.
-    $('.modal').on('hidden.bs.modal', function () {
-        $(this).removeData('bs.modal');
+    // Close sidebars on outside click.
+    $('.pusher').click(function () {
+        $('.sidebar').sidebar('hide');
     });
 });
