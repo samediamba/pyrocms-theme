@@ -1,16 +1,16 @@
-<?php namespace Anomaly\StreamsTheme;
+<?php namespace Anomaly\PyrocmsTheme;
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 
 /**
- * Class StreamsThemeServiceProvider
+ * Class PyrocmsThemeServiceProvider
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\StreamsTheme
+ * @package       Anomaly\PyrocmsTheme
  */
-class StreamsThemeServiceProvider extends AddonServiceProvider
+class PyrocmsThemeServiceProvider extends AddonServiceProvider
 {
 
     /**
@@ -19,7 +19,7 @@ class StreamsThemeServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $plugins = [
-        'Anomaly\StreamsTheme\StreamsThemePlugin'
+        'Anomaly\PyrocmsTheme\PyrocmsThemePlugin'
     ];
 }
  
