@@ -1,37 +1,25 @@
-<?php namespace Anomaly\PyrocmsTheme;
+<?php namespace Anomaly\StreamsTheme;
 
-use Illuminate\Support\ServiceProvider;
+use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 
 /**
- * Class PyrocmsThemeServiceProvider
+ * Class StreamsThemeServiceProvider
  *
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       Anomaly\PyrocmsTheme
+ * @package       Anomaly\StreamsTheme
  */
-class PyrocmsThemeServiceProvider extends ServiceProvider
+class StreamsThemeServiceProvider extends AddonServiceProvider
 {
 
     /**
-     * Boot the service provider.
-     */
-    public function boot()
-    {
-        app('twig')->addExtension(app('Anomaly\PyrocmsTheme\PyrocmsThemePlugin'));
-    }
-
-    /**
-     * Register the service provider.
+     * The addon plugins.
      *
-     * @return void
+     * @var array
      */
-    public function register()
-    {
-        app('events')->listen(
-            'Anomaly.Streams.Platform.Ui.Table.Event.*',
-            'Anomaly\PyrocmsTheme\Listener\TableListener'
-        );
-    }
+    protected $plugins = [
+        'Anomaly\StreamsTheme\StreamsThemePlugin'
+    ];
 }
  
