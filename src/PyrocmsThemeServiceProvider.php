@@ -21,5 +21,6 @@ class PyrocmsThemeServiceProvider extends AddonServiceProvider
     protected $plugins = [
         'Anomaly\PyrocmsTheme\PyrocmsThemePlugin'
     ];
+
 }
  
