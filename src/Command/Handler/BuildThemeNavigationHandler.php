@@ -1,4 +1,4 @@
-<?php namespace Anomaly\StreamsTheme\Command\Handler;
+<?php namespace Anomaly\PyrocmsTheme\Command\Handler;
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 use Anomaly\Streams\Platform\Addon\Module\ModuleCollection;
