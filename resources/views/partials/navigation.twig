@@ -1,40 +1,41 @@
-<div class="ui vertical inverted sidebar menu left navigation">
+<nav id="navigation">
 
-    <div class="item">
-        <a class="ui logo icon image" href="/">
-            {{ image("theme::img/icon-white.png").width(32)|raw }}
-        </a>
-        <a href="http://anomaly.is/streams" target="_blank"><b>Streams</b></a>
-    </div>
-
-    {% for item in theme_nav() %}
-        {% if item.items %}
-            <div class="item">
-                <div class="ui small inverted header">{{ item.title }}</div>
-                <div class="menu">
-                    {% for link in item.items %}
-                        <a class="item {{ link.active ? 'active' }}" href="{{ link.url }}">
-                            <b>{{ link.title }}</b>
-                        </a>
-                    {% endfor %}
+    <ul>
+        <li class="user">
+            <div class="media">
+                <div class="media-left">
+                    <img class="img-circle" src="https://gravatar.com/avatar/{{ md5(auth_user().email) }}">
+                </div>
+                <div class="media-body">
+                    <strong>
+                        {{ auth_user().getDisplayName() ?: auth_user().username }}
+                    </strong>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="{{ url_to('admin/logout') }}"><i
+                                        class="fa fa-power-off"></i> {{ trans('anomaly.module.users::button.logout') }}</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        {% else %}
-            <a class="item {{ item.active ? 'active' }}" href="{{ item.url }}">
-                <b>{{ item.title }}</b>
-            </a>
-        {% endif %}
-    {% endfor %}
+        </li>
 
-    <div class="item">
-        <div class="ui small inverted header">Learn More</div>
-        <div class="menu">
-            <a href="{{ url('https://pyrocms.com/about') }}" target="_blank" class="item">About PyroCMS</a>
-            <a href="{{ url('https://pyrocms.com/') }}" target="_blank" class="item">PyroCMS.com</a>
-            <a href="{{ url('https://docs.pyrocms.com/') }}" target="_blank" class="item">Documentation</a>
-            <a href="{{ url('https://docs.pyrocms.com/') }}" target="_blank" class="item">Support</a>
-            <a href="{{ url('https://pyrocms.com/contact') }}" target="_blank" class="item">Feedback</a>
-        </div>
-    </div>
+        {% for module in modules().enabled() %}
+            <li class="{{ module.active ? 'active' }}">
+                <a href="{{ url_to('admin/' ~ module.slug) }}">
+                    {{ icon(module.icon) }}
+                    <span>{{ trans(module.name) }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 
-</div>
+    {#<ul class="list-unstyled more">
+        <li><a href="https://anomaly.is/" target="_blank" class="item">About </a></li>
+        <li><a href="https://pyrocms.com/" target="_blank" class="item">PyroCMS.com</a></li>
+        <li><a href="https://docs.pyrocms.com/" target="_blank" class="item">Documentation</a></li>
+        <li><a href="https://docs.pyrocms.com/" target="_blank" class="item">Support</a></li>
+        <li><a href="https://anomaly.is/contact" target="_blank" class="item">Feedback</a></li>
+    </ul>#}
+
+</nav>
